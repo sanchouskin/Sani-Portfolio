@@ -1,339 +1,543 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en" ">
 
-<head>
-  <meta charset=" utf-8">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Roboto&amp;family=Satisfy&amp;display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+
+    height: 100%;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style:scrollbar;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid #e2e8f0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+html[Attributes Style] {
+    -webkit-locale: "en";
+}
+
+html {
+    display: block;
+}
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+    background: #472d2d;
+    overflow: auto;
+}
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+
+
+
+    #fullview > div {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 1.2rem;
+      flex-direction: column;
+      padding: 25px;
+      outline: 0;
+  }
+
+  .front_clr {
+      background-color: #3e206d;
+      color: #000000;
+  }
+
+  #fullview h2 {
+      margin: auto;
+      width: 50%;
+      text-align: center;
+  }
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<link href="https://www.jdmays.com/css/bootstrap-icons.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-<link rel="stylesheet" href="css/styles.css">
+  .saniname {
+    font-family: 'Satisfy', cursive;
+    font-size: 96px;
+    color: #ffffff;
+}
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Roboto&amp;family=Satisfy&amp;display=swap" rel="stylesheet">
 
 
-<title>Sani Askar</title>
+.about_clr  {
+    background-color: #d89cf6;
+    color: #000000;
 
-</head>
+}
 
-<body>
+.skills_clr {
+    background-color: #ffc300;
+    color: #000000;
+}
 
+.projects_clr {
+    background-color: #916dd5;
+    color: #000000;
+}
 
-  <div class="container-fluid">
-    <div id="fullview">
+.info_clr {
+    background-color: #282c34;
+    color: #000000;
+}
 
-      <div id="section_front" class="section front_clr">
+.contact_clr {
+    background-color: #1d566e;
+    color: #000000;
+}
 
 
 
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
 
-        <nav class="navbar navbar-expand-lg navbar-dark  ">
 
-          <a class="navbar-brand" href="">Sani Askar</a>
-          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#Navbtn" aria-controls="#Navbtn" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse " id="Navbtn">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#section_about">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#section_skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#section_projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#section_info">More Info</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#section_contact">Contact</a>
-              </li>
+}
 
-            </ul>
-          </div>
 
-        </nav>
+.saniabout {
+    font-family: 'Satisfy', cursive;
+    font-size: 28px;
+    color: #000000;
+  padding-left:  270px;
+}
 
-        <h2 class="saniname">Sani Askar</h2>
-      </div>
+.saniabout1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 28px;
+    color: #000000;
+  padding-left:  200px;
+}
+.saniabout2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 28px;
+    color: #000000;
+  padding-left:  190px;
 
+}
 
-    </div>
+.saniabout3 {
+    font-family: 'Satisfy', cursive;
+    font-size: 28px;
+    color: #000000;
+  padding-left:  250px;
 
+}
+.card {
+    position: relative;
 
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
 
+    margin: 0 auto;
+      float: none;
+margin-top: 200px;
 
-    <div class="container-fluid">
-      <div id="section_about" class="section about_clr" >
+}
 
+.card-exept{
 
-        <nav class="navbar1 navbar-expand-lg navbar-dark ">
 
-          <a class="navbar-brand" href="">Sani Askar</a>
 
+  display: flex;
+  flex-direction:row;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
 
-        </nav>
-        <div class="card-exept ">
-          <div class="card-body">
-<span class="saniabout">About Me</span>
-            <div class="about-text ">
+  margin: 0 300px;
+    float: none;
+margin-top: 120px;
 
-              <p class="h5">Я Аскарбек Санирабика, но вы можете обращаться ко мне Сани.Я студент второго курса и изучаю совершенно отдаленную от програмирования специальность. </p>
-              <p class="h5">Но я считаю что никогда не поздно научиться самому крутому скиллу! Сейчас я владею языками HTML,C++ и начальный уровень JS. Умею создавать и украшать вебсайты.Но на этом я не остановлюсь!</p>
-<span class="saniabout">-Sani</span>
-            </div>
 
-          </div>
-        </div>
+}
 
-      </div>
-    </div>
-  </div>
+.skills-container{
+background-color: #fff;
 
-  <div class="container-fluid">
-    <div id="section_skills" class="section skills_clr">
-      <nav class="navbar1 navbar-expand-lg navbar-dark  ">
 
-        <a class="navbar-brand" href="">Sani Askar</a>
+}
 
+.about-text{
+  position: relative;
+  text-align: left;
 
-      </nav>
 
 
 
-          <div class="about-text1 container-fluid">
-            <span class="saniabout ">Technical Skills</span>
 
-            <div id="testimonial-carousel" class="carousel slide" data-ride="false">
-              <div class="carousel-inner">
-                <div class="carousel-item active container-fluid">
-                  <h2 class="skills-text">Я изучила свои навыки программирования на онлайн-курсах Udemy. Я продолжаю узнавать что-то новое каждый день!</h2>
-                  <img class="skill-img" src="imgs/udemy.png">
+}
 
-                      <p>Udemy, Inc. - это крупный американский провайдер открытых онлайн-курсов, ориентированный на взрослых профессионалов и студентов. </p>
+.about-text1{
 
+  float: none;
+  background-color: #fff;
+  width: 700px;
 
 
-                </div>
-                <div class="carousel-item container-fluid">
-                  <h2 class="skills-text">HTML <br/> Я могу создавать структуру веб-сайтов с помощью HTML, могу определять заголовки, абзацы, ссылки, изображения и многое другое..</h2>
-                  <img class="skill-img1" src="imgs/html.png" alt="lady-profile">
-                  <p>HTML структура</p>
+}
 
-                </div>
+.about-text2{
 
-                <div class="carousel-item container-fluid">
-                  <h2 class="skills-text">C++<br/> Я умею стилизовать веб-сайты и сделать их презентабельными. Знаю встроенный, внутренний и внешний C ++.</h2>
-                  <img class="skill-img1" src="imgs/c++.png" alt="lady-profile">
-                  <p>C++ стайлинг</p>
+  float: none;
+  background-color: #fff;
+  width: 700px;
+  margin-top: 55px;
 
-                </div>
-                <div class="carousel-item container-fluid">
-                  <h2 class="skills-text">JS Beginner<br/> У меня базовый уровень JS. Я умею создавать простые функции.</h2>
-                  <img class="skill-img" src="imgs/js.png" alt="lady-profile">
-                  <p>JS поведение</p>
 
-                </div>
+}
 
-                <div class="carousel-item container-fluid">
-                  <h2 class="skills-text">Bootstrap<br/>Я знаю, как использовать фреймворки Bootstrap и делать адаптивные, хорошо работающие и красивые веб-сайты. </h2>
-                  <img class="skill-img" src="imgs/bootstrap.png" alt="lady-profile">
-                  <p>Bootstrap framework</p>
+.skills-text{
+    color: #525252;
+    font-size: 2rem;
+    height: 1.5;
+}
 
-                </div>
-                <div class="carousel-item container-fluid">
-                  <h2 class="skills-text">Web Design<br/> У меня есть знания в области веб-дизайна, такие как теория цветовой палитры, типографика, UI и UE.</h2>
-                  <img class="skill-img" src="imgs/design.png" alt="lady-profile">
-                  <p>Веб Дизайн</p>
+.skils-explain{
+  padding-top: 50px;
+  width: 600px;
+}
 
-                </div>
+.carousel-control-prev, .carousel-control-next{
+  background-color: #fff;
 
-              </div>
-              <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+  height: 200px;
+  width: 50px;
 
 
-          </div>
+}
 
-          <!-- end card/body -->
-        </div>
-      </div>
+.carousel-item {
 
+  width: 500px;
+  text-align: center;
 
-      <!-- end section -->
-    </div>
-  </div>
+}
 
+.project-item{
 
-  <div class="container-fluid container-fluid">
-    <div id="section_projects" class="section projects_clr">
+  text-align: center;
+  padding-top: 20px;
+}
 
-      <nav class="navbar1 navbar-expand-lg navbar-dark  ">
 
-        <a class="navbar-brand" href="">Sani Askar</a>
+.skill-img{
+  width: 20%;
+  border-radius: 100%;
+  margin: 20px;
+  float: none;
+}
 
-      </nav>
+.skill-img1{
+  width: 20%;
 
-      <div class="about-text2 container-fluid">
-          <span class="saniabout">Current Works</span>
+  margin: 20px;
+  float: none;
+}
 
 
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid #e2e8f0;
+}
 
-          <div class="project-item row">
 
-            <div class="col-md-4 col-sm-4 col-xs-4">
-              <b>ТинДог</b><br>
-              <a href="https://sanchouskin.github.io/Tin-Dog-Sani/"><span class="emoji"><span class="emoji">🧐</span></br> <h6>Посмотреть</h6></a>
-              <p><em>Задание на онлайн курсах</em></p>
-            </div>
 
-            <div class="col-md-4 col-sm-4 col-xs-4">
-              <b>Мой Сайт</b><br>
-              <a href="https://sanchouskin.github.io/saniaskar/"><span class="emoji"><span class="emoji">🧐</span></br> <h6>Посмотреть</h6></a>
-              <p><em>Упражнение Мой Сайт</em></p>
 
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-4">
-              <b>Резюме </b><br>
-              <a href="https://sanchouskin.github.io/Isa-Askar-Info/"><span class="emoji"><span class="emoji">🧐</span></br> <h6>Посмотреть</h6></a>
-              <p><em>Резюме для друга</em></p>
 
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-4">
-              <b>Мой Сайт </b><br>
-              <a href="https://sanchouskin.github.io/Sanchous/"><span class="emoji"><span class="emoji">🧐</span></br> <h6>Посмотреть</h6></a>
-              <p><em>Мой сайт(другой дизайн) </em></p>
 
 
-          </div>
+.pt-1, .py-1 {
+    padding-top: 0.25rem !important;
+}
 
-          <div class="col-md-4 col-sm-4 col-xs-4">
-            <b>О себе</b><br>
-            <a href="https://sanchouskin.github.io/ST/"><span class="emoji"><span class="emoji">🧐</span></br> <h6>Посмотреть</h6></a>
-            <p><em>Мой самый первый сайт</em></p>
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
 
+span.emoji {
+  font-size: 30px;
+  vertical-align: middle;
+  line-height: 2;
+}
 
-          </div>
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+}
 
+.list-group-item:first-child {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.list-group-item-primary {
+    color: #181f25;
+    background-color: #c5c8cc;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
 
-          <!-- end card/body -->
-        </div>
-      </div>
+.list-group-item-danger {
+    color: #6a1b07;
+    background-color: #f1c6bb;
+}
 
+.list-group-item-warning {
+    color: #395356;
+    background-color: #d6e4e6;
+}
 
-    </div>
-  </div>
-  <div class="container-fluid container-fluid">
-    <div id="section_info" class="section info_clr">
-      <nav class="navbar1 navbar-expand-lg navbar-dark  ">
+.list-group-item-light {
+    color: #7b7c7b;
+    background-color: #fafafa;
+}
 
-        <a class="navbar-brand" href="">Sani Askar</a>
 
-      </nav>
-      <div class="card w-50">
-        <div class="card-body">
-          <span class="saniabout2" >Additional Information</span>
 
-          <div class="row" style="text-align:center">
-            <div class="col-md-6 col-sm-6 col-xs-6">
-              <a href="https://codepen.io/Sani-Sunny/pen/gOLMxjM?editors=1000"><img src="imgs/large.png" style="width:10% " > CodePly</a>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6">
+.navbar{
+  width: 944px;
+  margin: 0 200px;
+    float: none;
 
-              <a href="https://github.com/sanchouskin" target="_new"><img src="imgs/github.png" style="width:10% " > GitHub</a>
-            </div>
-          </div>
 
-          <!-- end card/body -->
-        </div>
-      </div>
+}
 
+.navbar1{
+  font-family: "Ubuntu";
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-    </div>
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2rem;
+  margin-bottom: 20px;
 
-  </div>
-  <div class="container-fluid container-fluid">
-    <div id="section_contact" class="section contact_clr">
-      <nav class="navbar1 navbar-expand-lg navbar-dark  ">
 
-        <a class="navbar-brand" href="">Sani Askar</a>
+}
 
-      </nav>
-      <div class="about-text2 container-fluid" style="margin-top:150px" >
-          <span class="saniabout3">Contact Information</span>
 
-          <div class="row py-5 ">
-            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-              <h3 style="color:"black"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Аскарбек Сани</a></h3>
-            </div>
-          </div>
 
-          <div class="row" style="text-align:center ">
+.nav-item{
+  padding: 0 ;
+  text-align: center;
 
-            <div class="col-md-6 col-sm-6 col-xs-6">
-              <i class="fas fa-phone-square-alt " style="margin-bottom:20px" > +996709634135</i>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6">
-              <i class="fas fa-globe "> sanchouskin.github.io</i>
+}
 
-          </div>
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light" sans-serif;
+  margin-right: 5px;
+  width: 102px;
+  text-align: center;
 
+}
 
 
-          <!-- end card/body -->
-        </div>
-      </div>
-    </div>
 
+.container-fluid{
+  padding: 0;
 
 
-  </div>
-  </div>
+}
 
-  </div>
 
 
+#section_front,#section_about, #section_skills,#section_projects,#section_info,#section_contact{
+  height: 657px;
 
-  <!-- end card/body -->
-  </div>
-  </div>
+}
 
-  <!-- end card/body -->
-  </div>
+.navbar-toggler{
+  margin-left: 40px;
 
+}
 
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  background-color: #ffc300;
+margin-top: 100px;
+height:50px;
+width: 30px;
+border-radius: 50%
 
-  </div>
-  </div>
+}
 
 
+@media (max-width:1028px){
+.col-sm-4 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;}
 
 
-  </div>
+.container-fluid{
+  text-align: center;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
 
 
+  }
 
+  .card-exept{
+    text-align: center;
+    -ms-flex: 0 0 50%;
 
-</body>
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
 
-</html>
+    }
+
+    .card-exept1{
+      text-align: center;
+      -ms-flex: 0 0 50%;
+
+      margin-top: 100px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 10px;
+
+      }
+
+  .navbar{
+
+    width: 150px;
+    text-align: center;
+  }
+
+
+
+  #section_front,#section_about, #section_skills,#section_projects,#section_info,#section_contact{
+    height: 810px;
+
+  }
+
+  .about-text{
+    position: relative;
+    text-align: center;
+
+      float: none;
+
+  }
+  .about-text1{
+    float: none;
+    background-color: #fff;
+    width: 300px;
+    margin-top: 200px;
+  }
+
+  .about-text2{
+    margin-top: 100px;
+    width: 300px;
+  }
+
+  .card-exept{
+    margin-top: 75px;
+  }
+
+  p{
+    padding-top: 0;
+    width: auto;
+    font-size: 10px;
+
+
+  }
+
+  .skills-text{
+    padding-top: 20px;
+    font-size: 1rem;
+  }
+
+  .carousel-item{
+    width: 200px;
+    text-align: center;
+  }
+
+
+  .saniabout, .saniabout3 {
+
+    padding-left:  0;
+  }
+
+}
